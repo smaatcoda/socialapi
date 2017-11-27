@@ -1,0 +1,41 @@
+{
+  "name": "teslamn/socialapi",
+  "description": "Social API Wrapper",
+  "keywords": [
+    "social api",
+    "vkontakte api",
+    "mailru api",
+    "odnoklassniki api",
+    "facebook api"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Nicolai Manev",
+      "email": "manev.nikolay@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "TeslaMN\\SocialApi\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.2.*"
+  },
+  "require": {
+    "facebook/graph-sdk": "^5.6",
+    "yangqi/htmldom": "1.0.*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TeslaMN\\SocialApi\\SocialApiProvider"
+      ],
+      "aliases": {
+        "SocialApi": "TeslaMN\\SocialApi\\Facades\\SocialApi"
+      }
+    }
+  }
+}
